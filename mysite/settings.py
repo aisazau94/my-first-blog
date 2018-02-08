@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = "America/Bogota" #'UTC'
+TIME_ZONE = 'America/Bogota' #'UTC'
 
 USE_I18N = True
 
@@ -120,9 +120,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static') ## Ruta para los archivos estáticos
-
-
-
 
 
 
