@@ -3,18 +3,12 @@
         <title>Aleja Isaza blog</title>
     </head>
     <body>
-        <div>
-            <h1><a href="">Aleja Isaza blog</a></h1>
-        </div>
-         <div>
-            <p>published: 08.02.2018, 15:00</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Hola!.</p>
-        </div>
-
-        <div>
-            <h2><a href="">My second post</a></h2>
-            <p>Chao.</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
